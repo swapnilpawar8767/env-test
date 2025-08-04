@@ -42,20 +42,7 @@ This project demonstrates a full CI/CD setup using **GitHub Pages**, **GitHub Ac
 - Deploys to `gh-pages/` root
 - Registers under `production` environment
 
----
-
-## 📁 Directory Structure (in `gh-pages`)
-
-gh-pages/
-├── index.html # Production site
-└── dev-preview/
-└── index.html # Development preview
-
-yaml
-Copy
-Edit
-
----
+--
 
 ## ✅ Manual Promotion Flow
 
