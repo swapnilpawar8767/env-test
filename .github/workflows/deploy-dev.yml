@@ -1,24 +1,27 @@
-name: Deploy to GitHub Pages - Dev
+name: Deploy to GitHub Pages - Prod
 
 on:
   push:
     branches:
-      - dev
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://swapnilpawar8767.github.io/env-test/
+
     permissions:
-      contents: write   # 👈 REQUIRED to allow pushes
+      contents: write
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Deploy to GitHub Pages (dev)
+      - name: Deploy to GitHub Pages (prod)
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./
           publish_branch: gh-pages
-          destination_dir: dev-preview
