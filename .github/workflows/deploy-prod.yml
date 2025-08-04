@@ -8,8 +8,12 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://swapnilpawar8767.github.io/env-test/
+
     permissions:
-      contents: write   # 👈 REQUIRED
+      contents: write
 
     steps:
       - name: Checkout
