@@ -14,9 +14,11 @@ jobs:
 
     permissions:
       contents: write
+      pages: write
+      id-token: write
 
     steps:
-      - name: Checkout
+      - name: Checkout source
         uses: actions/checkout@v4
 
       - name: Deploy to GitHub Pages (dev)
