@@ -1,6 +1,5 @@
 # 🌐 Static Website Deployment with Dev & Prod Environments
 
-
 This project demonstrates a full CI/CD setup using **GitHub Pages**, **GitHub Actions**, and **Environments** for deploying a static website with two isolated environments:
 
 - 🧪 `development` → auto-deploys from the `dev` branch
