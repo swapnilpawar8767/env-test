@@ -28,5 +28,5 @@ jobs:
           publish_dir: ./
           publish_branch: gh-pages
           destination_dir: dev-preview
-          keep_files: true  
+          keep_files: true
           
